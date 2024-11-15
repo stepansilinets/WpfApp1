@@ -80,7 +80,7 @@ namespace WpfApp1
                 textLabel.Text = "Ошибка ввода";
                 return;
             }
-
+            
             string operation = parts[1];
 
 
@@ -88,17 +88,18 @@ namespace WpfApp1
             {
                 case "+":
                     textLabel.Text = (num1 + num2).ToString();
-
-                    break; 
-
+                    break;
                 case "-":
                     textLabel.Text = (num1 - num2).ToString();
                     break;
-
+                case "*":
+                    textLabel.Text = (num1 * num2).ToString();
+                    break;
                 default:
                     textLabel.Text = "Ошибка";
                     break;
             }
+
 
         }
     }
