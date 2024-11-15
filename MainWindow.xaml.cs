@@ -88,10 +88,13 @@ namespace WpfApp1
             {
                 case "+":
                     textLabel.Text = (num1 + num2).ToString();
-                    break;
+
+                    break; 
+
                 case "-":
                     textLabel.Text = (num1 - num2).ToString();
                     break;
+
                 default:
                     textLabel.Text = "Ошибка";
                     break;
