@@ -81,7 +81,36 @@ namespace WpfApp1
                 return;
             }
 
-          
+
+            string operation = parts[1];
+
+
+            switch (operation)
+            {
+                case "+":
+                    textLabel.Text = (num1 + num2).ToString();
+                    break;
+                case "-":
+                    textLabel.Text = (num1 - num2).ToString();
+                    break;
+                case "*":
+                    textLabel.Text = (num1 * num2).ToString();
+                    break;
+                case "/":
+                    if (num2 == 0)
+                    {
+                        textLabel.Text = "Деление на 0";
+                    }
+                    else
+                    {
+                        textLabel.Text = (num1 / num2).ToString();
+                    }
+                    break;
+                default:
+                    textLabel.Text = "Ошибка";
+                    break;
+            }
+
 
         }
     }
