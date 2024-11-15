@@ -82,18 +82,7 @@ namespace WpfApp1
             }
 
           
-            string operation = parts[1];
 
-            
-            switch (operation)
-            {
-                case "+":
-                    textLabel.Text = (num1 + num2).ToString();
-                    break;
-                default:
-                    textLabel.Text = "Ошибка";
-                    break;
-            }
         }
     }
 }
