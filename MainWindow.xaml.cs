@@ -80,7 +80,8 @@ namespace WpfApp1
                 textLabel.Text = "Ошибка ввода";
                 return;
             }
-            
+
+
             string operation = parts[1];
 
 
@@ -94,6 +95,16 @@ namespace WpfApp1
                     break;
                 case "*":
                     textLabel.Text = (num1 * num2).ToString();
+                    break;
+                case "/":
+                    if (num2 == 0)
+                    {
+                        textLabel.Text = "Деление на 0";
+                    }
+                    else
+                    {
+                        textLabel.Text = (num1 / num2).ToString();
+                    }
                     break;
                 default:
                     textLabel.Text = "Ошибка";
